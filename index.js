@@ -28,7 +28,7 @@ app.get('/mojang/v1/:user', async function (req, res) {
                 skin: {
                     avatar: `https://crafatar.com/avatars/${raw_id}?overlay=true`,
                     head_render: `https://crafatar.com/renders/head/${raw_id}?overlay=true`,
-                    body_render: `https://crafatar.com/renders/body${raw_id}?overlay=true`,
+                    body_render: `https://crafatar.com/renders/body/${raw_id}?overlay=true`,
                     skin: `https://crafatar.com/skins/${raw_id}`,
                     cape: `https://crafatar.com/capes/${raw_id}`
                 }
