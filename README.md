@@ -14,7 +14,7 @@ const axios = require('axios');
 
 async function getData(username) {
     try {
-        const response = await axios.get(`https://api-mojang.herokuapp.com/mojang/v1/${username}`);
+        const response = await axios.get(`https://api.mctools.pro/mojang/v1/${username}`);
         console.log(response);
     } catch (error) {
         console.error(error);
