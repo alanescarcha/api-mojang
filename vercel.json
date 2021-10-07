@@ -8,8 +8,8 @@
     ],
     "routes": [
         {
-            "src": "/mojang/v1/(.*)",
-            "dest": "/mojang/v1/"
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
 }
