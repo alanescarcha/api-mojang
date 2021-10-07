@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node" : "14.x"
+  },
   "scripts": {
     "start": "node index.js"
-  },
-  "engines": {
-  "node": ">=10.0.0",
-  "npm": ">=6.0.0"
   },
   "author": "Alan Escarcha",
   "license": "ISC",
