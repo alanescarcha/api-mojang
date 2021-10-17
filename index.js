@@ -5,8 +5,9 @@ const v1 = require("./mojang/v1/api");
 app.use(express.json({ extended: false }));
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "mctools.pro"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.setHeader('Content-Type', 'application/json');
   next();
 });
 
