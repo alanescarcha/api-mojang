@@ -11,7 +11,7 @@ async function getData(username) {
     }
 }
 
-router.get("/:user", async (req, res) => {
+router.get("/:user", async (req, res, next) => {
     try {
         const player = await getData(req.params.user);
         const raw_id = await player.raw_id;
