@@ -5,9 +5,9 @@ const v1 = require("./mojang/v1/api");
 app.use(express.json({ extended: false }));
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  res.setHeader('Content-Type', 'application/json');
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Headers', 'X-Requested-With');
+  res.set('Content-Type', 'application/json');
   next();
 });
 
