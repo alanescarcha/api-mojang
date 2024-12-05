@@ -1,4 +1,4 @@
-# API MOJANG
+# API MOJANG (Deprecated)
 
 Created to obtain the most important data of a user from Mojang APIs. All in one.
 
